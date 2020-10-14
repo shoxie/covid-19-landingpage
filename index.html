@@ -70,9 +70,9 @@
             <a href="#">2</a>
             <a href="#">3</a>
           </div>
-          <a href="javascript:void(0);" class="p-10" onclick="myFunction()">
+          <button href="javascript:void(0);" onclick="myFunction()">
             <i class="fa fa-bars"></i>
-          </a>
+          </button>
         </div>
       </div>
     </nav>
@@ -113,21 +113,29 @@
       <div class="section h-screen">
         <div class="flex md:flex-row flex-col items-center justify-center gap-5">
           <div>
-            <img src="./images/illustration2.png" />
+            <img class="md:-ml-10" src="./images/illustration2.png" />
           </div>
-          <div class="h-full flex flex-col md:items-center justify-center">
+          <div class="h-full flex flex-col md:items-start justify-center">
             <h2 class="text-myPink font-galion font-bold text-xl md:text-left text-center">
               What Is Covid-19
             </h2>
             <h1 class="font-galion font-bold text-3xl text-myGreen md:text-left text-center">
               Coronavirus
             </h1>
-            <p class="capitalize pb-8 md:text-left text-center">
+            <p class="capitalize pb-8 md:text-left text-center leading-10 md:visible hidden">
               Corona viruses are a type of virus. There are many different
               kinds,<br />and some cause disease. A newly identified type has
               caused a recent<br />outbreak of respiratory illness now called
               COVID-19.Lauren Sauer, M.S.,<br />the director of operations with
               the Johns Hopkins Office of Critical Event<br />Preparedness and
+              Response
+            </p>
+            <p class="capitalize pb-8 md:text-left text-center leading-8 md:hidden visible">
+              Corona viruses are a type of virus. There are many different
+              kinds, and some cause disease. A newly identified type has
+              caused a recent outbreak of respiratory illness now called
+              COVID-19.Lauren Sauer, M.S., the director of operations with
+              the Johns Hopkins Office of Critical Event Preparedness and
               Response
             </p>
             <a
