@@ -4,12 +4,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" type="text/css" href="fullpage/fullpage.min.css" />
-    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@8af0edd/css/all.css" rel="stylesheet" type="text/css" />
-    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@8af0edd/css/all.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <title>Covid-19 Landing page</title>
     <style>
       .dot {
         height: 10px;
-        width: 10px;
+        width: 20px;
         background-color: #fa5652;
         border-radius: 50%;
         display: inline-block;
@@ -18,43 +33,53 @@
   </head>
 
   <body>
-    <nav class="mt-10 fixed w-full">
+    <nav class="mt-10 fixed w-full z-50">
       <div
         class="container mx-auto flex flex-row md:justify-between justify-center md:gap-0 items-center w-full"
       >
-        <img width="150" height="150" src="./images/logo.png" alt="logo" />
+        <a href="#Home"
+          ><img width="150" height="150" src="./images/logo.png" alt="logo"
+        /></a>
         <div>
-          <ul class="md:flex flex-row gap-8 mt-2 hidden">
+          <ul class="md:flex flex-row gap-8 mt-2 hidden font-bold">
             <li>
               <div
-                class="flex flex-col font-galion text-myGreen items-center hover:text-myPink transition-all ease-in-out duration-300"
+                class="flex flex-col group font-galion text-myGreen items-center hover:text-myPink transition-all ease-in-out duration-300"
               >
                 Overview
-                <span class="dot opacity-0 hover:opacity-100"></span>
+                <span
+                  class="w-full h-1 group-hover:bg-myPink bg-none transition-all ease-in-out duration-500 rounded-full"
+                ></span>
               </div>
             </li>
             <li>
               <div
-                class="flex flex-col font-galion text-myGreen items-center hover:text-myPink transition-all ease-in-out duration-300"
+                class="flex flex-col group font-galion text-myGreen items-center hover:text-myPink transition-all ease-in-out duration-300"
               >
                 Contagion
-                <span class="dot opacity-0 hover:opacity-100"></span>
+                <span
+                  class="w-full h-1 group-hover:bg-myPink bg-none transition-all ease-in-out duration-500 rounded-full"
+                ></span>
               </div>
             </li>
             <li>
               <div
-                class="flex flex-col font-galion text-myGreen items-center hover:text-myPink transition-all ease-in-out duration-300"
+                class="flex flex-col group font-galion text-myGreen items-center hover:text-myPink transition-all ease-in-out duration-300"
               >
                 Symptoms
-                <span class="dot opacity-0 hover:opacity-100"></span>
+                <span
+                  class="w-full h-1 group-hover:bg-myPink bg-none transition-all ease-in-out duration-500 rounded-full"
+                ></span>
               </div>
             </li>
             <li>
               <div
-                class="flex flex-col font-galion text-myGreen items-center hover:text-myPink transition-all ease-in-out duration-300"
+                class="flex flex-col group font-galion text-myGreen items-center hover:text-myPink transition-all ease-in-out duration-300"
               >
                 Prevention
-                <span class="dot opacity-0 hover:opacity-100"></span>
+                <span
+                  class="w-full h-1 group-hover:bg-myPink bg-none transition-all ease-in-out duration-500 rounded-full"
+                ></span>
               </div>
             </li>
             <li>
@@ -70,18 +95,23 @@
             <a href="#">2</a>
             <a href="#">3</a>
           </div>
-          <button href="javascript:void(0);" onclick="myFunction()">
+          <button
+            class="md:hidden"
+            href="javascript:void(0);"
+            onclick="myFunction()"
+          >
             <i class="fa fa-bars"></i>
           </button>
         </div>
       </div>
     </nav>
-    <div id="fullpage">
+    <div id="fullpage" class="z-0">
       <div class="section h-screen w-full pt-32">
         <div class="flex md:flex-row flex-col justify-center h-1/2">
           <div class="w-2/12"></div>
 
           <div
+            style="padding-left: 10%"
             class="w-full h-1/12 flex flex-col md:justify-center md:items-start items-center"
           >
             <h2
@@ -111,18 +141,26 @@
         </div>
       </div>
       <div class="section h-screen">
-        <div class="flex md:flex-row flex-col items-center justify-center gap-5">
+        <div
+          class="flex md:flex-row flex-col items-center justify-center gap-5"
+        >
           <div>
             <img class="md:-ml-10" src="./images/illustration2.png" />
           </div>
           <div class="h-full flex flex-col md:items-start justify-center">
-            <h2 class="text-myPink font-galion font-bold text-xl md:text-left text-center">
+            <h2
+              class="text-myPink font-galion font-bold text-xl md:text-left text-center"
+            >
               What Is Covid-19
             </h2>
-            <h1 class="font-galion font-bold text-3xl text-myGreen md:text-left text-center">
+            <h1
+              class="font-galion font-bold text-3xl text-myGreen md:text-left text-center"
+            >
               Coronavirus
             </h1>
-            <p class="capitalize pb-8 md:text-left text-center leading-10 md:visible hidden">
+            <p
+              class="capitalize pb-8 md:text-left text-center leading-10 md:flex hidden"
+            >
               Corona viruses are a type of virus. There are many different
               kinds,<br />and some cause disease. A newly identified type has
               caused a recent<br />outbreak of respiratory illness now called
@@ -130,13 +168,14 @@
               the Johns Hopkins Office of Critical Event<br />Preparedness and
               Response
             </p>
-            <p class="capitalize pb-8 md:text-left text-center leading-8 md:hidden visible">
+            <p
+              class="capitalize pb-8 md:text-left text-center leading-8 md:hidden visible"
+            >
               Corona viruses are a type of virus. There are many different
-              kinds, and some cause disease. A newly identified type has
-              caused a recent outbreak of respiratory illness now called
-              COVID-19.Lauren Sauer, M.S., the director of operations with
-              the Johns Hopkins Office of Critical Event Preparedness and
-              Response
+              kinds, and some cause disease. A newly identified type has caused
+              a recent outbreak of respiratory illness now called
+              COVID-19.Lauren Sauer, M.S., the director of operations with the
+              Johns Hopkins Office of Critical Event Preparedness and Response
             </p>
             <a
               class="bg-myPink text-myPink font-bold bg-opacity-25 px-8 py-5 rounded-full hover:bg-myPink hover:text-white transition-all ease-in-out duration-500 md:text-left text-center"
@@ -145,27 +184,24 @@
             >
           </div>
         </div>
-        </div>
-        
-       
       </div>
       <div
-        class="section h-screen bg-center bg-no-repeat w-full"
+        class="section h-screen bg-center bg-no-repeat w-full overflow-hidden"
         style="background-image: url('./images/Contagion.png')"
       >
         <div class="container mx-auto">
-          <div class="text-center">
+          <div class="text-center pt-24">
             <h2 class="text-myPink font-galion font-bold text-xl">Covid-19</h2>
-            <h1 class="font-galion font-bold text-3xl text-myGreen pt-3">
+            <h1 class="font-galion font-bold text-3xl text-myGreen md:pt-3">
               Cotagion
             </h1>
-            <p class="capitalize font-galion pt-5 leading-9">
+            <p class="capitalize font-galion md:pt-5 md:leading-9">
               Corona viruses are a type of virus. There are many different
               kinds, and<br />some cause disease. A newly identified type
             </p>
           </div>
           <div
-            class="flex flex-row justify-center items-center gap-10 pt-10 z-20"
+            class="md:flex flex-row justify-center items-center gap-10 pt-10 z-20 hidden"
           >
             <div
               class="group w-4/12 text-center bg-white shadow-xl px-5 py-16 hover:border-b-4 hover:border-myPink hover:scale-110 transform transition-all ease-in-out duration-500"
@@ -216,6 +252,257 @@
               </p>
             </div>
           </div>
+          <div class="md:hidden visible swiper-container">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide group w-4/12 text-center bg-white shadow-xl px-5 py-16 hover:border-b-4 hover:border-myPink transform transition-all ease-in-out duration-500"
+              >
+                <img
+                  style="width: 270px; height: 249px"
+                  class="ml-10"
+                  src="./images/girl.png"
+                />
+                <h1 class="pt-5 font-galion font-bold text-3xl text-myGreen">
+                  Air Transmission
+                </h1>
+                <p class="pt-5 capitalize font-galion leading-8 w-full">
+                  Objectively evolve tactical expertise before<br />extensible
+                  initiatives. Efficiently simplify
+                </p>
+              </div>
+              <div
+                class="swiper-slide group w-4/12 text-center bg-white shadow-xl px-5 py-16 hover:border-b-4 hover:border-myPink transform transition-all ease-in-out duration-500"
+              >
+                <img
+                  style="width: 270px; height: 249px"
+                  class="ml-10"
+                  src="./images/hands.png"
+                />
+                <h1 class="pt-5 font-galion font-bold text-3xl text-myGreen">
+                  Human Contacts
+                </h1>
+                <p class="pt-5 capitalize font-galion leading-8 w-full">
+                  Washing your hands is one of thesimplest<br />ways you can
+                  protect
+                </p>
+              </div>
+              <div
+                class="swiper-slide group w-4/12 text-center bg-white shadow-xl px-5 py-16 hover:border-b-4 hover:border-myPink transform transition-all ease-in-out duration-500"
+              >
+                <img
+                  style="width: 270px; height: 249px"
+                  class="ml-10"
+                  src="./images/cup.png"
+                />
+                <h1 class="pt-5 font-galion font-bold text-3xl text-myGreen">
+                  Contained Objects
+                </h1>
+                <p class="pt-5 capitalize font-galion leading-8 w-full">
+                  Use the tissue while sneezing,In this way, you<br />can
+                  protect your droplets.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section h-screen">
+        <div
+          class="container mx-auto flex flex-col justify-center items-center h-full gap-10 md:gap-0"
+        >
+          <div class="text-center">
+            <h2 class="text-myPink font-galion font-bold text-xl">Covid-19</h2>
+            <h1 class="font-galion font-bold text-3xl text-myGreen md:pt-3">
+              Symptoms
+            </h1>
+            <p class="capitalize font-galion md:pt-5 md:leading-9">
+              Corona viruses are a type of virus. There are many different
+              kinds, and<br />some cause disease. A newly identified type has
+              caused a recent outbreak of respiratory
+            </p>
+          </div>
+          <div class="flex md:items-center justify-center">
+            <img
+              width="70%"
+              height="50%"
+              src="./images/Group 15444.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="section h-screen">
+        <div
+          class="container mx-auto flex flex-col justify-center items-center h-full overflow-hidden"
+        >
+          <div class="text-center pt-32">
+            <h2 class="text-myPink font-galion font-bold text-xl">Covid-19</h2>
+            <h1
+              class="font-galion font-bold text-3xl text-myGreen capitalize md:pt-3"
+            >
+              what should we do
+            </h1>
+            <p class="capitalize font-galion md:pt-5 md:leading-9">
+              Corona viruses are a type of virus. There are many different
+              kinds, and<br />some cause disease. A newly identified type has
+              caused a recent outbreak of respiratory
+            </p>
+          </div>
+          <div class="swiper-container1 w-full">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper w-full">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="">
+                  <div class="flex flex-row items-center justify-center">
+                    <div class="flex flex-row gap-10">
+                      <div>
+                        <h1
+                          class="text-myPink py-2 px-3 bg-pink-200 rounded-full font-bold text-2xl"
+                        >
+                          01
+                        </h1>
+                      </div>
+                      <div>
+                        <h1 class="capitalize font-bold text-myGreen text-3xl">
+                          wear masks
+                        </h1>
+                        <p class="leading-10">
+                          Continually seize impactful vortals rather than
+                          future-proof supply<br />chains. Uniquely exploit
+                          emerging niches via fully tested<br />meta-services.
+                          Competently pursue standards compliant leadership<br />skills
+                          vis-a-vis pandemic "outside the box" thinking.
+                          Objectively
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="./images/Mask girl.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="">
+                  <div class="flex flex-row items-center justify-center">
+                    <div class="flex flex-row gap-10">
+                      <div>
+                        <h1
+                          class="text-myPink py-2 px-3 bg-pink-200 rounded-full font-bold text-2xl"
+                        >
+                          02
+                        </h1>
+                      </div>
+                      <div>
+                        <h1 class="capitalize font-bold text-myGreen text-3xl">
+                          wash your hands
+                        </h1>
+                        <p class="leading-10">
+                          Continually seize impactful vortals rather than
+                          future-proof<br />supply chains. Uniquely exploit
+                          emerging niches via fully<br />tested meta-services.
+                          Competently pursue standards<br />compliant leadership
+                          skills vis-a-vis pandemic "outside the<br />box"
+                          thinking. Objectively Continually seize impactful
+                          vortals
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="./images/washgirl.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="">
+                  <div class="flex flex-row items-center justify-center">
+                    <div class="flex flex-row gap-10">
+                      <div>
+                        <h1
+                          class="text-myPink py-2 px-3 bg-pink-200 rounded-full font-bold text-2xl"
+                        >
+                          03
+                        </h1>
+                      </div>
+                      <div>
+                        <h1 class="capitalize font-bold text-myGreen text-3xl">
+                          use nose - rag
+                        </h1>
+                        <p class="leading-10">
+                          Continually seize impactful vortals rather than
+                          future-proof supply<br />chains. Uniquely exploit
+                          emerging niches via fully tested<br />meta-services.
+                          Competently pursue standards compliant leadership<br />skills
+                          vis-a-vis pandemic "outside the box" thinking.
+                          Objectively
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="./images/sneezegirl.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="">
+                  <div class="flex flex-row items-center justify-center">
+                    <div class="flex flex-row gap-10">
+                      <div>
+                        <h1
+                          class="text-myPink py-2 px-3 bg-pink-200 rounded-full font-bold text-2xl"
+                        >
+                          04
+                        </h1>
+                      </div>
+                      <div>
+                        <h1 class="capitalize font-bold text-myGreen text-3xl">
+                          avoid contacts
+                        </h1>
+                        <p class="leading-10">
+                          Continually seize impactful vortals rather than
+                          future-proof supply<br />chains. Uniquely exploit
+                          emerging niches via fully tested<br />meta-services.
+                          Competently pursue standards compliant leadership<br />skills
+                          vis-a-vis pandemic
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <img src="./images/angrygirl.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination1"></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section bg-pink-100 bg-center bg-contain bg-no-repeat"
+        style="background-image: url('./images/Map.png')"
+      >
+        <div
+          class="container mx-auto flex flex-col items-center justify-end h-full gap-12 pb-32"
+        >
+          <div class="pt-24">
+            <h1 class="text-3xl font-bold text-myGreen text-center">
+              Have Questions in mind?<br />Let us help you
+            </h1>
+          </div>
+          <div class="flex flex-row w-full items-center justify-center">
+            <input
+              type="text"
+              class="rounded-full py-5 px-5 w-4/12"
+              placeholder="whiterose@gmail.com"
+            />
+            <button class="bg-myPink px-12 py-5 rounded-full -ml-12 text-white">
+              Send
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -224,22 +511,42 @@
       integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.extensions.min.js" integrity="sha512-pci5WG2+7QnpsinWWpGUd3RgI61fU1bWlQQQegC2mVqwOQC/+Xp0ROGO0AYB6dvoLBYRxwm+t+DWOVRkxmlcdQ==" crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.extensions.min.js"
+      integrity="sha512-pci5WG2+7QnpsinWWpGUd3RgI61fU1bWlQQQegC2mVqwOQC/+Xp0ROGO0AYB6dvoLBYRxwm+t+DWOVRkxmlcdQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
       new fullpage("#fullPage", {
         autoScrolling: true,
         scrollHorizontally: true,
         navigation: true,
+        anchors: [
+          "Home",
+          "Overview",
+          "Cotagion",
+          "Symptomps",
+          "Preventions",
+          "Contact",
+        ],
       });
       function myFunction() {
-        console.log('activated')
+        console.log("activated");
         var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
       }
+      var mySwiper = new Swiper(".swiper-container");
+      var mySwiper1 = new Swiper(".swiper-container1", {
+        pagination: {
+          el: ".swiper-pagination1",
+        },
+      });
     </script>
   </body>
 </html>
